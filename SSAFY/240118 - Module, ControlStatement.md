@@ -334,7 +334,7 @@ for key in my_dict:
 > **현재 반복문의 남은 코드를 건너뛰고 다음 반복으로 넘어감**
 > 
 
-```
+
 ```python
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -352,7 +352,7 @@ for num in numbers:
 """
 ```
 
-```
+
 
 ### break와 continue 주의사항
 
