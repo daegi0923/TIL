@@ -6,18 +6,18 @@
 * 코드로 작성
 
 #### 언패킹
-'''python
+```python
 a = [1, 2, 3, 4, 5]
 b, c, *d = a
 print(d)
-'''
+```
 
-'''python
+```python
 def func(*args):
     print(args)
 
 func([1, 2, 3])  # (1, 2, 3)
-'''
+```
 #### 리스트 vs 튜플
 * 가변 vs 불변
 * 함수는 같은 값을 넣으면 같은 결과가 나와야함 -> 튜플
@@ -25,37 +25,37 @@ func([1, 2, 3])  # (1, 2, 3)
 
 
 #### List Comprehension
-'''python
+```python
 [5, 5, 5, 5, 5] #Hard coding
 lst = [5 for _ in range(5)]
-'''
+```
 
 #### not
 * not : 뒤집는 연산자
 * 1 => truthy
 * False => falsy
-'''python
+```python
 print(not 1) # False
 print(not False) # True
 print(not 0) # True
 
-'''
+```
 * truthy/falsy 한거 구분해라
 
 #### 반복문
-'''python
+```python
 for i in "hello":
     print(i)
-'''
+```
 
 #### 인덱싱
-'''python
+```python
 a = [['hello', 2], [3, 4]]
 print(a[0])
 print(a[0][0])
 print(a[0][0][2])
 
-'''
+```
 #### 연산자 우선순위
 1+1*1**1-1 = ?
 #### 시퀀스타입 종류
