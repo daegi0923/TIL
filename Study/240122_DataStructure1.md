@@ -346,5 +346,16 @@ print(not '0') # False
 my_dict = {'apple' : 1, 'banana' : 2, 'cherry' : 3}
 result = 1 in my_dict
 print(result) # False
-
 ```
+
+
+## range, map
+```python
+lst = [range(5), range(1, 5)]
+map_lst = map(lambda x, y : x + y, *lst)
+total = sum(map_lst)
+print(total)
+```
+- map : 우측에 있는 객체에, 쉼표 좌측에 있는 함수를 하나씩 적용한다.
+- [0, 1, 2, 3, 4], [1, 2, 3, 4] 를 하나씩 더할때 인덱스가 안맞는 (4) 는 무시되고 더해짐...
+- 그래서 map_lst = [1, 3, 5, 7]
