@@ -134,11 +134,55 @@ print(text) # Hello-world!
 |         L.clear()       	|     리스트의 모든 항목 삭제                                                                             	|
 
 #### .append(x)
+```python
+# append
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list) # [1, 2, 3, 4]
+
+```
 #### .extend(iterable)
+```python
+# extend
+my_list = [1, 2, 3]
+my_list.extend([4, 5, 6])
+print(my_list) # [1, 2, 3, 4, 5, 6]
+
+```
 #### .insert(i, x)
+```python
+# insert
+my_list = [1, 2, 3]
+my_list.insert(1, 5)    
+print(my_list) # [1, 5, 2, 3]
+```
 #### .remove(x)
+```python
+# remove
+my_list = [1, 2, 3]
+my_list.remove(2)
+print(my_list)
+```
 #### .pop(i)
+```python
+# pop(i)
+my_list = [1, 2, 3, 4, 5]
+
+item1 = my_list.pop()
+item2 = my_list.pop(0)
+
+print(item1) # 5
+print(item2) # 1
+print(my_list) # [2, 3, 4]
+```
 #### .clear()
+```python
+# clear
+my_list = [1, 2, 3]
+my_list.clear()
+print(my_list) # []
+
+```
 
 
 ### 리스트 탐색 및 정렬 메서드
@@ -148,6 +192,42 @@ print(text) # Hello-world!
 |            L.reverse()          	|     리스트의 순서를 역순으로 변경 (정렬 X)|
 |             L.sort()            	|     리스트를 정렬 (매개변수   이용가능)                                	|
 |            L.count(x)           	|     리스트에서 항목   x의 개수를 반환                                  	|
+
+#### L.index(x, start, end)
+```
+# index
+my_list = [1, 2, 3]
+index = my_list.index(2)
+print(index) # 1
+
+```
+#### L.reverse()  
+```
+# reverse
+my_list = [1, 3, 2, 8, 1, 9]
+my_list.reverse()
+print(my_list) # [9, 1, 8, 2, 3, 1]
+```
+#### L.sort()       
+```
+# sort
+my_list = [1, 2, 3]
+my_list.sort()
+print(my_list) # [1, 2, 3]
+
+#내림차순
+my_list.sort(reverse=True)
+print(my_list) # [3, 2, 1]
+
+```
+#### L.count(x) 
+```
+# count
+my_list = [1, 2, 3]
+count = my_list.count(3)
+print(count) # 3
+
+```
 
 
 # 복사
@@ -252,4 +332,19 @@ print(a, b) # 10, 1
 print(not '') # True
 print(not 'True') # False
 print(not '0') # False
+```
+
+
+## enumerate
+- 순회가능한 객체에서 인덱스와 값을 반환하는 함수
+- 근데 인덱스와 값 없어도 출력은 나옴(선택사항)
+    - 한 개만 있으면 튜플로 나옴 ㅇㅇ ㅋ
+
+## dictionary 와 in
+- 딕셔너리에서 in은 key를 기준으로 작성함~~~~~~ㅜㅜ
+```python
+my_dict = {'apple' : 1, 'banana' : 2, 'cherry' : 3}
+result = 1 in my_dict
+print(result) # False
+
 ```
