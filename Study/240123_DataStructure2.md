@@ -22,7 +22,8 @@
     print(my_set)  # {1, 'b', 3, 2, 'c', 'd', 'a’}
     ```
 #### .clear()
-    ```py
+- 
+    ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
     my_set.clear()
@@ -51,7 +52,7 @@
     ```
 
 #### .pop()
-    ```py
+    ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
     element = my_set.pop()
@@ -60,7 +61,7 @@
     ```
 
 #### .update(iterable)
-    ```py
+    ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
     my_set.update([1, 4, 5])
@@ -96,7 +97,7 @@
 #### .clear()
 - 딕셔너리 D의 모든 키/값 쌍을 제거
 
-    ```py
+    ```python
     person = {'name': 'Alice', 'age': 25}
     person.clear()
     print(person)  # {}
@@ -107,7 +108,7 @@
 #### .get(key[,default])
 - 키 연결된 값을 반환하거나 키가 없으면 None 혹은 기본 값을 반환
 
-    ```py
+    ```python
     person = {'name': 'Alice', 'age': 25}
 
     print(person.get('name'))  # Alice
@@ -133,7 +134,7 @@
 #### .values()
 - 딕셔너리 값을 모은 객체를 반환
 
-    ```py
+    ```python
     person = {'name': 'Alice', 'age': 25}
     print(person.keys())  # dict_keys(['name', 'age’])
 
@@ -162,7 +163,7 @@
 #### .pop(key[,default])
 - 키를 제거하고 연결됐던 값을 반환 (없으면 에러나 default 를 반환)
 
-    ```py
+    ```python
     person = {'name': 'Alice', 'age': 25}
     
     print(person.pop('age'))  # 25
@@ -184,7 +185,7 @@
 - other가 제공하는 키/값 쌍으로 딕셔너리를 갱신 <br>
 기존 키는 덮어씀
 
-    ```py
+    ```python
     person = {'name': 'Alice', 'age': 25}
     other_person = {'name': 'Jane', 'gender': 'Female'}
 
@@ -243,3 +244,29 @@
 - 대부분의 불변형 데이터 타입은 hashable
 - tuple의 경우 불변형이지만 해시 불가능한 객체를 참조 할 때는 tuple 자체도 해시 불가능해지는 경우가 있음 => "hash 가능하다 != 불변하다"
 
+---
+
+# 자료구조
+## 리스트 vs 딕셔너리
+- 조회에는 딕셔너리가 유리
+
+### CRUD
+- CREATE
+- READ
+    - 인덱스를 모른다 dic > list
+    - 인덱스를 안다 => 쌤쌤
+- UPDATE
+    - 끝에다 넣는 기준 => 쌤쌤
+    - 중간에 넣는 기준 => 딕셔너릭 유리
+    - 아니래 똑같대... 둘다...왜냐? 배열이 아님 ㅋ 파이썬에서 배열없대 ㅋㅋ
+- DELETE
+    - 이것도 쌤쌤 ㅋㅋ 
+> 파이썬에서는 걍 편한거 쓰세요~ 근데 다른 언어 쓸때는 신경좀.;
+
+
+## 해싱
+- 해싱 함수 내부는 암호화 >> 알수 없어
+- 딕셔너리에 해싱해서 넣음 >> 그래서 순서는 장담할 수 없음
+- 해싱충돌 -> 해싱해서 넣었는데 똑같은게 두개 들어감
+
+![image](https://github.com/daegi0923/TIL/assets/156268579/dbc80149-7862-4fb7-97b1-15f14bec5093)
