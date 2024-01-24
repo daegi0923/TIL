@@ -22,7 +22,7 @@
     print(my_set)  # {1, 'b', 3, 2, 'c', 'd', 'a’}
     ```
 #### .clear()
-- 
+- 세트의 모든 항목을 제거
     ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
@@ -31,7 +31,7 @@
     ```
 
 #### .remove(x)
-
+- 세트에서 항목 x를 제거
     ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
@@ -42,6 +42,7 @@
     print(my_set)  # KeyError
     ```
 #### .discard()
+- 세트 s에서 항목 x를 제거. remove와 달리 에러 없음
     ```python
     my_set = {1, 2, 3}
     
@@ -52,6 +53,7 @@
     ```
 
 #### .pop()
+- 세트에서 임의의 요소를 제거하고 반환
     ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
@@ -61,6 +63,7 @@
     ```
 
 #### .update(iterable)
+- 세트에 다른 iterable 요소를 추가
     ```python
     my_set = {'a', 'b', 'c', 1, 2, 3}
     
