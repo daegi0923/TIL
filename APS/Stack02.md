@@ -107,3 +107,29 @@ arr = [1, 2, 3, 4]
 bit = [0] * N
 f(0, N)
 ```
+
+
+## 분할정복
+- Divide, Conquer, Combine
+- 퀵소트, 머지소트 <- 이거 두개는 꼭 알아
+### 병합 정렬
+![MergeSort](https://github.com/daegi0923/daegi0923/assets/156268579/e1da1b28-d2cc-4afb-a662-8ec6b090e1e7)
+
+### 퀵 정렬
+- Keyword
+    1. Pivot
+    1. Divide and Conquer
+    1. vs Merge Sort
+
+- 최악의 경우(Worst cases) : T(n) = O(n^2)
+    - 최악의 경우는 정렬하고자 하는 배열이 오름차순 정렬되어있거나 내림차순 정렬되어있는 경우다.
+    - 작은 값 큰 값을 계속 피봇으로 정했을때도 
+![QuickSort](https://github.com/daegi0923/daegi0923/assets/156268579/54a16df6-e72f-4aa6-ba5b-df4e6d00f5e1)
+
+### Quick Sort vs Merge Sort
+![QvsM](https://github.com/daegi0923/daegi0923/assets/156268579/37fa3e14-1828-4e47-9c50-193ca8a2ac62)
+
+---
+# Queue
+- 단독으로는 안나옴, 스택이랑 비교 또는 응용해서 알고리즘
+- 큐를 사용하지 않고 큐를 구현? -> 스택 2개 ㄱ
