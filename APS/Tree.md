@@ -61,3 +61,10 @@
         - 왼쪽 자식노드, 부모노드, 오른쪽 자식노드 순으로 방문
     1. 후위순회(postorder traversal) : LRV
         - 자식노드를 좌우 순서로 방문한 후, 부모노드로 방문
+
+
+---
+### null, none, undefined
+- null : 명시적 부재
+- none : 암묵적 부재, 암시적 부재
+- undefined : 암묵적 부재 => javascript
