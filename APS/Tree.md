@@ -68,3 +68,10 @@
 - null : 명시적 부재
 - none : 암묵적 부재, 암시적 부재
 - undefined : 암묵적 부재 => javascript
+
+### 파이썬에서 리스트 전역변수로 호출 안해도 되는 이유
+(https://medium.com/@dltkddud4403/python-%EC%A7%80%EC%97%AD%EB%B3%80%EC%88%98-%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98-%EA%B4%80%EB%A0%A8-%EA%B0%9C%EB%85%90-4ea2a1865071)
+(https://velog.io/@tenacious_mzzz/python-%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98-%EB%B0%B0%EC%97%B4)
+
+---
+# 240221
